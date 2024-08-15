@@ -1,0 +1,46 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Currently...",
+    title: "Sales Factory Internship",
+    description:
+      "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
+    link: "https://www.salesfactory.com/careers"
+  },
+  {
+    date: "July 2023",
+    title: "Hamal Solutions",
+    description:
+      "At Hamal Solutions, I was involved in multiple projects, contributing to the development of innovative tech solutions.",
+  },
+  {
+    date: "March 2023",
+    title: "Tech Innovators Workshop",
+    description:
+      "Participated in a workshop focused on cutting-edge technology and problem-solving skills in the tech industry.",
+  },
+  {
+    date: "January 2022",
+    title: "Marketing Apprentice",
+    description:
+      "Worked closely with the marketing team to develop and implement social media strategies.",
+  },
+  {
+    date: "September 2021",
+    title: "Web Development Bootcamp",
+    description:
+      "Completed an intensive web development bootcamp, mastering HTML, CSS, and JavaScript.",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

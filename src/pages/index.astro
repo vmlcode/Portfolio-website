@@ -1,0 +1,54 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
+import Github from "../components/icons/Github.astro";
+import Mail from "../components/icons/Mail.astro";
+import ExperienceIcon from "../components/icons/ExperienceIcon.astro";
+import XIcon from "../components/icons/X.astro";
+import SocialPill from "../components/SocialPill.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+---
+
+<Layout title="Victor Maldonado's portfolio - Developer">
+  <main class="xl:px-0 px-4">
+    <SectionContainer id="top" class="xl:py-44 py-20 xl:pb-24 pb-16">
+      <h1 class="text-white xl:text-5xl text-3xl font-bold flex flex-row gap-x-4 xl:pb-10 pb-4">
+        Hey, I'm Vmlcode<div class="flex justify-center items-center">
+          <Badge class="xl:flex hidden">Available to hire</Badge>
+        </div>
+      </h1>
+      <h2 class="text-base xl:text-lg text-wrap">
+        <span class="text-white">I’m a developer</span><span class="opacity-80">
+          with a passion for creating dynamic. I also specialize in AI
+          development, exploring innovative ways to integrate intelligent
+          systems into everyday technology. Currently, I’m refining my skills as
+          an intern at <span class="text-blue-400">Sales Factory</span></span
+        >
+      </h2>
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill href="https://github.com/vmlcode">
+          <Github class="xl:size-6 size-5" />
+          Github
+        </SocialPill>
+        <SocialPill href="https://x.com/vmlcode">
+          <XIcon class="xl:size-6 size-5" />
+          vmlcode
+        </SocialPill>
+        <SocialPill class="">
+          <Mail class="xl:size-6 size-5" />
+          victormaldonadoarias@outlook
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id="experience">
+      <h2 class="text-2xl font-semibold xl:mb-4 flex items-center gap-2">
+        <ExperienceIcon class="xl:size-7 size-5" />
+        Work Experience
+      </h2>
+      <Experience />
+    </SectionContainer>
+  </main>
+</Layout>
