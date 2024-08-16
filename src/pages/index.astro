@@ -9,11 +9,13 @@ import XIcon from "../components/icons/X.astro";
 import SocialPill from "../components/SocialPill.astro";
 import Experience from "../components/Experience.astro";
 import SectionContainer from "../components/SectionContainer.astro";
+import CodeIcon from "../components/icons/CodeIcon.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout title="Victor Maldonado's portfolio - Developer">
   <main class="xl:px-0 px-4">
-    <SectionContainer id="top" class="xl:py-44 py-20 xl:pb-24 pb-16">
+    <SectionContainer id="top" class="xl:py-44 py-20 xl:pb-36 pb-16">
       <h1 class="text-white xl:text-5xl text-3xl font-bold flex flex-row gap-x-4 xl:pb-10 pb-4">
         Hey, I'm Vmlcode<div class="flex justify-center items-center">
           <Badge class="xl:flex hidden">Available to hire</Badge>
@@ -36,19 +38,27 @@ import SectionContainer from "../components/SectionContainer.astro";
           <XIcon class="xl:size-6 size-5" />
           vmlcode
         </SocialPill>
-        <SocialPill class="">
+        <SocialPill href="mailto:victormaldonadoarias@outlook.com">
           <Mail class="xl:size-6 size-5" />
           victormaldonadoarias@outlook
         </SocialPill>
       </nav>
     </SectionContainer>
 
-    <SectionContainer id="experience">
-      <h2 class="text-2xl font-semibold xl:mb-4 flex items-center gap-2">
+    <SectionContainer id="experience" class="mb-24">
+      <h2 class="text-2xl font-semibold flex items-center gap-2">
         <ExperienceIcon class="xl:size-7 size-5" />
         Work Experience
       </h2>
       <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="projects">
+      <h2 class="text-2xl font-semibold xl:mb-4 flex items-center gap-2">
+        <CodeIcon class="xl:size-7 size-5" />
+        Projects
+      </h2>
+      <Projects />
     </SectionContainer>
   </main>
 </Layout>
